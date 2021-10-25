@@ -4,16 +4,24 @@
 
 @layer components{
   .sidebar-icon{
-    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto bg-gray-100 text-green-900 hover:bg-green-500 hover:text-white  rounded-xl hover:rotate-90  transition-all duration-300 ease-linear cursor-pointer;
+    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto bg-gray-100 text-green-900 hover:bg-green-500 hover:text-white  rounded-3xl hover:rounded-xl active:rounded-xl 
+    hover:rotate-0 transition-all duration-300 ease-linear dark:hover:bg-gray-100 dark:active:bg-gray-100 dark:bg-gray-700 dark:text-green-300 dark:hover:text-green-900 dark:active:text-green-900 cursor-pointer active:bg-green-500 active:text-white;
+  }
+  .tab-icon{
+    @apply bg-green-500 text-white dark:text-green-900 dark:bg-gray-100 rounded-xl h-12 w-12 mt-2 mb-2 flex items-center justify-center mx-auto 
+  }
+  .tab-icon-off{
+    @apply bg-gray-100 text-green-900 dark:text-green-300 dark:bg-gray-700 rounded-3xl hover:bg-green-500 hover:text-white  dark:hover:text-green-900 dark:hover:bg-gray-100 h-12 w-12 mt-2 mb-2 flex items-center justify-center mx-auto 
   }
   .themeIcon{
-    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto bg-gray-100 text-green-900 hover:bg-green-500 hover:text-white  rounded-xl hover:rotate-90  transition-all duration-300 ease-linear cursor-pointer;
+    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto bg-gray-100 text-green-900 hover:bg-green-500 hover:text-white  rounded-3xl hover:rounded-xl
+    dark:hover:bg-gray-100 dark:hover:text-green-900 hover:rotate-360  transition-all duration-200 ease-linear cursor-pointer;
   }
 
   .sidebar-tooltip{
-    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md
+    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md transform
     text-black bg-gray-100 
     text-xs font-bold 
-    transition-all duration-100 opacity-0 origin-left;
+    transition-all duration-100 scale-0 origin-left;
   }
 }
