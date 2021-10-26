@@ -13,22 +13,22 @@ const Sidebar = props=>{
   useEffect(() => {
     switch (activeTabs) {
         case 'profile':
-            history.push('/profile')
+            history.push('/portof/profile')
             break;
         case 'skills':
-            history.push('/skills')
+            history.push('/portof/skills')
             break;
         case 'education':
-            history.push('/education')
+            history.push('/portof/education')
             break;
         case 'project':
-            history.push('/project')
+            history.push('/portof/project')
             break; 
         case 'contact':
-            history.push('/contact')
+            history.push('/portof/contact')
             break;
         default:
-            history.push('/profile')
+            history.push('/portof/profile')
             break;
     }
 }, [activeTabs, history]);

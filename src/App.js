@@ -10,11 +10,11 @@ function App() {
   return (
     <Router>
       <Sidebar/>
-      <Route exact path='/profile' component={Profile}/>
-      <Route exact path='/skills' component={Skills}/>
-      <Route exact path='/education' component={Education}/>
-      <Route exact path='/project' component={Project}/>
-      <Route exact path='/contact' component={Contact}/>
+      <Route exact path='/portof/profile' component={Profile}/>
+      <Route exact path='/portof/skills' component={Skills}/>
+      <Route exact path='/portof/education' component={Education}/>
+      <Route exact path='/portof/project' component={Project}/>
+      <Route exact path='/portof/contact' component={Contact}/>
     </Router>
   );
 }
