@@ -4,6 +4,9 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage:{
+        'hero':"url('./assets/profile.jpg')",
+      },
       margin:{
         '18':'4.5rem',
       },
@@ -18,13 +21,17 @@ module.exports = {
         '23/24':'95.8333333%',
         'cont':'93.75%',
         'side':'7.25%,'
+      }, 
+      padding:{
+        '10p':'10%',
       }
     },
   },
   variants: {
     extend: {
       scale:['group-hover'],
-      borderRadius:['hover']
+      borderRadius:['hover'],
+      position:['hover'],
     },
   },
   plugins: [
