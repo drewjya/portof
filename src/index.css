@@ -4,7 +4,7 @@
 
 @layer components{
   .sidebar{
-    @apply fixed top-0 left-0 h-screen w-18 flex flex-col bg-gray-200 dark:bg-gray-900 shadow-lg;
+    @apply fixed top-0 left-0 h-screen w-18 flex flex-col bg-gray-200 dark:bg-gray-900;
   }
   .sidebar-icon{
     @apply relative flex items-center justify-center h-12 w-12 m-2 mx-auto bg-gray-100 text-green-900 hover:bg-green-500 hover:text-white rounded-3xl hover:rounded-xl
@@ -23,16 +23,36 @@
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-left;
   }
- 
-  .content{
-    @apply static overflow-visible object-center ml-18 p-5 h-full w-full dark:bg-gray-700 bg-gray-100 text-gray-900 dark:text-gray-200;
+  .isi{
+    @apply flex-col w-full ml-18;
   }
-  .title{
-    @apply text-3xl text-center font-extrabold font-mono pb-5 border-b-2 dark:border-gray-200 border-gray-900;
+  .content{
+    @apply overflow-visible object-center h-full pt-10 dark:bg-gray-700 bg-gray-100 text-gray-900 dark:text-gray-200;
   }
   
+  .body{
+      @apply mx-5;
+  }
+  .title{
+    @apply text-5xl text-center font-extrabold font-mono pb-5 border-b-2 dark:border-gray-200 border-gray-900;
+  }
+  
+  
   .image{
-    @apply w-64 h-64 rounded-full mx-auto mt-5 object-cover object-top;
+    @apply w-96 h-96 rounded-full mx-auto my-5 mb-10 object-cover object-top;
+  }
+ 
+  .data-t{
+    @apply text-2xl font-sans font-normal dark:text-gray-200 text-center text-gray-600;
+  }
+  .data-b{
+    @apply text-3xl font-bold font-sans dark:text-gray-300 text-center text-gray-700;
+  }
+  .paragraf{
+    @apply text-center text-gray-700 dark:text-gray-300 text-lg;
+  }
+  .bottom{
+    @apply  bottom-0 left-18 h-18 py-6 bg-gray-200 text-gray-900 dark:text-gray-200 dark:bg-gray-900 text-center;
   }
   
 }
