@@ -1,6 +1,5 @@
 import { CgProfile } from "react-icons/cg";
 import {BsGear} from 'react-icons/bs';
-import {IoSchoolOutline} from 'react-icons/io5';
 import {FaMoon, FaSun} from 'react-icons/fa'
 import useDarkMode from "../hooks/darkMode";
 import {MdOutlineWorkspaces, MdOutlinePersonAddAlt1} from "react-icons/md";

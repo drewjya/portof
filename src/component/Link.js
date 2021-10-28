@@ -9,7 +9,10 @@ function Link(props) {
     }else if(props.name==='linked'){
         return (<a target="_blank" className="text-blue-800" href="https://id.linkedin.com/in/andre-wijaya-a22a5620b?trk=people-guest_people_search-card"><ContactIcon icon={<BsLinkedin size="68"/>}/></a>);
     }else if(props.name==='ig'){
-        return (<a target="_blank" className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500"  href="https://www.instagram.com/drewjya/"><ContactIcon icon={<BsInstagram size="68"/>}/></a>);
+        return (
+        <a className="text-white" target="_blank" href="https://www.instagram.com/drewjya/">
+            <BsInstagram className=" bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-2xl"  size="68"/>
+        </a>);
     }
 }
 
