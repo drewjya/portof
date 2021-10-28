@@ -11,7 +11,6 @@ function App() {
       <Sidebar/>
       <Route exact path='/portof/' component={Profile}/>
       <Route exact path='/portof/skills' component={Skills}/>
-    
       <Route exact path='/portof/project' component={Project}/>
       <Route exact path='/portof/contact' component={Contact}/>
     </Router>
