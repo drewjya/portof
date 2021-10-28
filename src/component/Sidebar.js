@@ -18,9 +18,7 @@ const Sidebar = props=>{
         case 'skills':
             history.push('/portof/skills')
             break;
-        case 'education':
-            history.push('/portof/education')
-            break;
+       
         case 'project':
             history.push('/portof/project')
             break; 
@@ -60,19 +58,7 @@ const Sidebar = props=>{
             Skills
             </span>
           </div>
-          <div  className="sidebar-icon group"  onClick={()=>setActiveTabs('education')}>
-          {activeTabs === 'education' ?
-            <div className="tab-icon">
-              <IoSchoolOutline size="28"/>
-            </div> : 
-            <div className="tab-icon-off">
-              <IoSchoolOutline size="28"/>
-            </div>
-            }
-              <span class="sidebar-tooltip group-hover:scale-100">
-            Education
-            </span>
-          </div>
+          
           <div  className="sidebar-icon group" onClick={()=>setActiveTabs('project')}>
           {activeTabs === 'project' ?
             <div className="tab-icon">
